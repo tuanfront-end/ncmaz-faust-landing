@@ -1,7 +1,35 @@
-Landing page for Chisfis template, build by Nextjs 13,
-This repo has 2 branches react and nextjs, react branch will build for Chisfis-React version and nextjs branch will build for Chisfis-Nextjs version
-2 will now be pushed to 2 hosting on vercel!
+# Salient
 
----
+Salient is a [Tailwind UI](https://tailwindui.com) site template built using [Tailwind CSS](https://tailwindcss.com) and [Next.js](https://nextjs.org).
 
-2 branches to develop are react-dev and next-dev, need to merge into 2 branches react and nextjs to deploy to vercel
+## Getting started
+
+To get started with this template, first install the npm dependencies:
+
+```bash
+npm install
+```
+
+Next, run the development server:
+
+```bash
+npm run dev
+```
+
+Finally, open [http://localhost:3000](http://localhost:3000) in your browser to view the website.
+
+## Customizing
+
+You can start editing this template by modifying the files in the `/src` folder. The site will auto-update as you edit these files.
+
+## License
+
+This site template is a commercial product and is licensed under the [Tailwind UI license](https://tailwindui.com/license).
+
+## Learn more
+
+To learn more about the technologies used in this site template, see the following resources:
+
+- [Tailwind CSS](https://tailwindcss.com/docs) - the official Tailwind CSS documentation
+- [Next.js](https://nextjs.org/docs) - the official Next.js documentation
+- [Headless UI](https://headlessui.dev) - the official Headless UI documentation
