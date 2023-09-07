@@ -5,7 +5,7 @@ import { Container } from '@/components/Container'
 import logoNextjs from '@/images/logos/nextjs.svg'
 import logoTS from '@/images/logos/typescript.svg'
 import logoWordPress from '@/images/logos/wordpress.svg'
-import logoFaust from '@/images/logos/faust2.svg'
+import logoFaust from '@/images/logos/faust2.png'
 import logoReact from '@/images/logos/react.svg'
 import { BUY_LINK, DEMO_PAGE_LINK, PRICE } from '@/constants'
 
