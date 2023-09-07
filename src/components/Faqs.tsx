@@ -8,23 +8,104 @@ const faqs = [
   [
     {
       question: 'Do I need 2 hosting and 2 domains to host my website?',
-      answer: `<div class="markdown prose w-full break-words dark:prose-invert light"><p>Certainly, in the context of a Next.js website with a headless WordPress setup, you will typically need two separate hosting environments and two domain names to host your website effectively:</p><ol><li><p><strong>Front-end Next.js</strong>: This is the user interface portion of your website, built using Next.js. The front-end will be hosted on one server (hosting environment) and may use a dedicated domain name.</p></li><li><p><strong>Back-end WordPress</strong>: WordPress serves as a content management system (CMS) and provides the API for your website's data. WordPress will be hosted on a different server (hosting environment) and may use a separate domain name.</p></li></ol><p>So, you will need:</p><ul><li><p><strong>Hosting for the Front-end Next.js</strong>: This is where you will store the source code and files for your Next.js website. You can use a hosting service or a virtual server to deploy Next.js. You will configure your own domain name for the front-end.</p></li><li><p><strong>Hosting for the Back-end WordPress</strong>: WordPress will be hosted on a separate server. This could be the same server with your WordPress installation or a dedicated server for your WordPress project. You will also configure your domain name for the back-end.</p></li></ul></div>`,
+      answer: (
+        <div>
+          <p>
+            Certainly, in the context of a Next.js website with a headless
+            WordPress setup, you will typically need two separate hosting
+            environments and two domain names to host your website effectively:
+          </p>
+          <ol>
+            <li>
+              <p>
+                <strong>Front-end Next.js</strong>: This is the user interface
+                portion of your website, built using Next.js. The front-end will
+                be hosted on one server (hosting environment) and may use a
+                dedicated domain name.
+              </p>
+            </li>
+            <li>
+              <p>
+                <strong>Back-end WordPress</strong>: WordPress serves as a
+                content management system (CMS) and provides the API for your
+                website&apos;s data. WordPress will be hosted on a different
+                server (hosting environment) and may use a separate domain name.
+              </p>
+            </li>
+          </ol>
+          <p>So, you will need:</p>
+          <ul>
+            <li>
+              <p>
+                <strong>Hosting for the Front-end Next.js</strong>: This is
+                where you will store the source code and files for your Next.js
+                website. You can use a hosting service or a virtual server to
+                deploy Next.js. You will configure your own domain name for the
+                front-end.
+              </p>
+            </li>
+            <li>
+              <p>
+                <strong>Hosting for the Back-end WordPress</strong>: WordPress
+                will be hosted on a separate server. This could be the same
+                server with your WordPress installation or a dedicated server
+                for your WordPress project. You will also configure your domain
+                name for the back-end.
+              </p>
+            </li>
+          </ul>
+        </div>
+      ),
     },
   ],
   [
     {
       question: 'Documentation and support?',
-      answer: `Please check out our <a class="font-medium underline" href="${DOCS_LINK}" target="_blank" rel="noopener noreferrer">documentation</a> and if you still have questions, please email us or open a <a class="font-medium underline" href="${SUPPORT_LINK}" target="_blank" rel="noopener noreferrer">ticket</a> and we will get back to you.`,
+      answer: (
+        <div>
+          Please check out our{' '}
+          <a
+            className="font-medium underline"
+            href="${DOCS_LINK}"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            documentation
+          </a>{' '}
+          and if you still have questions, please email us or open a{' '}
+          <a
+            className="font-medium underline"
+            href="${SUPPORT_LINK}"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            ticket
+          </a>{' '}
+          and we will get back to you.
+        </div>
+      ),
     },
     {
       question: 'Do I need to know about Next.js to use the theme?',
-      answer:
-        'It would be great if you were a Next.js/React developer, which will help you to customize the theme to your liking. However, if you are an end-user and you just want to use it as a normal theme, you do not need to have knowledge of Nextjs or Javascript. You just need to administrate your website on the WordPress admin page.',
+      answer: (
+        <div>
+          It would be great if you were a Next.js/React developer, which will
+          help you to customize the theme to your liking. However, if you are an
+          end-user and you just want to use it as a normal theme, you do not
+          need to have knowledge of Nextjs or Javascript. You just need to
+          administrate your website on the WordPress admin page.
+        </div>
+      ),
     },
     {
       question: 'How do I manage my website?',
-      answer:
-        'You still administer your site on your WordPress admin page. No need to learn anything else and everything is as familiar and easy as before.',
+      answer: (
+        <div>
+          You still administer your site on your WordPress admin page. No need
+          to learn anything else and everything is as familiar and easy as
+          before.
+        </div>
+      ),
     },
   ],
 ]
@@ -75,10 +156,9 @@ export function Faqs() {
                     <h3 className="font-display text-lg leading-7 text-slate-900">
                       {faq.question}
                     </h3>
-                    <p
-                      dangerouslySetInnerHTML={{ __html: faq.answer }}
-                      className="prose mt-4 text-sm text-slate-700"
-                    ></p>
+                    <div className="prose mt-4 text-sm text-slate-700">
+                      {faq.answer}
+                    </div>
                   </li>
                 ))}
               </ul>
