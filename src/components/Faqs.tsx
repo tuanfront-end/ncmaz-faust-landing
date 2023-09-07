@@ -2,57 +2,29 @@ import Image from 'next/image'
 
 import { Container } from '@/components/Container'
 import backgroundImage from '@/images/background-faqs.jpg'
+import { DOCS_LINK, SUPPORT_LINK } from '@/constants'
 
 const faqs = [
   [
     {
-      question: 'Does TaxPal handle VAT?',
-      answer:
-        'Well no, but if you move your company offshore you can probably ignore it.',
-    },
-    {
-      question: 'Can I pay for my subscription via purchase order?',
-      answer: 'Absolutely, we are happy to take your money in all forms.',
-    },
-    {
-      question: 'How do I apply for a job at TaxPal?',
-      answer:
-        'We only hire our customers, so subscribe for a minimum of 6 months and then let’s talk.',
+      question: 'Do I need 2 hosting and 2 domains to host my website?',
+      answer: `<div class="markdown prose w-full break-words dark:prose-invert light"><p>Certainly, in the context of a Next.js website with a headless WordPress setup, you will typically need two separate hosting environments and two domain names to host your website effectively:</p><ol><li><p><strong>Front-end Next.js</strong>: This is the user interface portion of your website, built using Next.js. The front-end will be hosted on one server (hosting environment) and may use a dedicated domain name.</p></li><li><p><strong>Back-end WordPress</strong>: WordPress serves as a content management system (CMS) and provides the API for your website's data. WordPress will be hosted on a different server (hosting environment) and may use a separate domain name.</p></li></ol><p>So, you will need:</p><ul><li><p><strong>Hosting for the Front-end Next.js</strong>: This is where you will store the source code and files for your Next.js website. You can use a hosting service or a virtual server to deploy Next.js. You will configure your own domain name for the front-end.</p></li><li><p><strong>Hosting for the Back-end WordPress</strong>: WordPress will be hosted on a separate server. This could be the same server with your WordPress installation or a dedicated server for your WordPress project. You will also configure your domain name for the back-end.</p></li></ul></div>`,
     },
   ],
   [
     {
-      question: 'What was that testimonial about tax fraud all about?',
-      answer:
-        'TaxPal is just a software application, ultimately your books are your responsibility.',
+      question: 'Documentation and support?',
+      answer: `Please check out our <a class="font-medium underline" href="${DOCS_LINK}" target="_blank" rel="noopener noreferrer">documentation</a> and if you still have questions, please email us or open a <a class="font-medium underline" href="${SUPPORT_LINK}" target="_blank" rel="noopener noreferrer">ticket</a> and we will get back to you.`,
     },
     {
-      question:
-        'TaxPal sounds horrible but why do I still feel compelled to purchase?',
+      question: 'Do I need to know about Next.js to use the theme?',
       answer:
-        'This is the power of excellent visual design. You just can’t resist it, no matter how poorly it actually functions.',
+        'It would be great if you were a Next.js/React developer, which will help you to customize the theme to your liking. However, if you are an end-user and you just want to use it as a normal theme, you do not need to have knowledge of Nextjs or Javascript. You just need to administrate your website on the WordPress admin page.',
     },
     {
-      question:
-        'I found other companies called TaxPal, are you sure you can use this name?',
+      question: 'How do I manage my website?',
       answer:
-        'Honestly not sure at all. We haven’t actually incorporated or anything, we just thought it sounded cool and made this website.',
-    },
-  ],
-  [
-    {
-      question: 'How do you generate reports?',
-      answer:
-        'You just tell us what data you need a report for, and we get our kids to create beautiful charts for you using only the finest crayons.',
-    },
-    {
-      question: 'Can we expect more inventory features?',
-      answer: 'In life it’s really better to never expect anything at all.',
-    },
-    {
-      question: 'I lost my password, how do I get into my account?',
-      answer:
-        'Send us an email and we will send you a copy of our latest password spreadsheet so you can find your information.',
+        'You still administer your site on your WordPress admin page. No need to learn anything else and everything is as familiar and easy as before.',
     },
   ],
 ]
@@ -62,7 +34,7 @@ export function Faqs() {
     <section
       id="faq"
       aria-labelledby="faq-title"
-      className="relative overflow-hidden bg-slate-50 py-20 sm:py-32"
+      className="relative overflow-hidden bg-slate-50 py-20 sm:py-24"
     >
       <Image
         className="absolute left-1/2 top-0 max-w-none -translate-y-1/4 translate-x-[-30%]"
@@ -81,13 +53,19 @@ export function Faqs() {
             Frequently asked questions
           </h2>
           <p className="mt-4 text-lg tracking-tight text-slate-700">
-            If you can’t find what you’re looking for, email our support team
-            and if you’re lucky someone will get back to you.
+            If you can’t find what you’re looking for, please{' '}
+            <a
+              className="font-medium underline"
+              href="mailto:nghiaxchis@gmail.com"
+            >
+              email us
+            </a>{' '}
+            and we will get back to you as soon as possible.
           </p>
         </div>
         <ul
           role="list"
-          className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 lg:max-w-none lg:grid-cols-3"
+          className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 lg:max-w-none lg:grid-cols-2"
         >
           {faqs.map((column, columnIndex) => (
             <li key={columnIndex}>
@@ -97,7 +75,10 @@ export function Faqs() {
                     <h3 className="font-display text-lg leading-7 text-slate-900">
                       {faq.question}
                     </h3>
-                    <p className="mt-4 text-sm text-slate-700">{faq.answer}</p>
+                    <p
+                      dangerouslySetInnerHTML={{ __html: faq.answer }}
+                      className="prose mt-4 text-sm text-slate-700"
+                    ></p>
                   </li>
                 ))}
               </ul>
