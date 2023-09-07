@@ -7,35 +7,42 @@ import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
 import backgroundImage from '@/images/background-features.jpg'
-import screenshotExpenses from '@/images/screenshots/expenses.png'
-import screenshotPayroll from '@/images/screenshots/payroll.png'
-import screenshotReporting from '@/images/screenshots/reporting.png'
-import screenshotVatReturns from '@/images/screenshots/vat-returns.png'
+import screenshotHomeAudio from '@/images/screenshots/home3-audio.png'
+import screenshotHomeVideo from '@/images/screenshots/home4-video.png'
+import screenshotGallery from '@/images/screenshots/home5-gallery.png'
+import screenshotComments from '@/images/screenshots/comments.png'
+import screenshotFavorites from '@/images/screenshots/author-favorites.png'
 
 const features = [
   {
-    title: 'Payroll',
+    title: 'Live listiening podcast, audio',
     description:
-      "Keep track of everyone's salaries and whether or not they've been paid. Direct deposit not supported.",
-    image: screenshotPayroll,
+      'Users can still listen to podcasts/audio/music while reading articles and experiencing the website!',
+    image: screenshotHomeAudio,
   },
   {
-    title: 'Claim expenses',
+    title: 'Video live preview on card',
     description:
-      "All of your receipts organized into one place, as long as you don't mind typing in the data by hand.",
-    image: screenshotExpenses,
+      'Users no longer need to navigate to the post and just hover over the post card to preview the video.',
+    image: screenshotHomeVideo,
   },
   {
-    title: 'VAT handling',
+    title: 'Gallery slider on card',
     description:
-      "We only sell our software to companies who don't deal with VAT at all, so technically we do all the VAT stuff they need.",
-    image: screenshotVatReturns,
+      'Users no longer need to navigate to posts and can now preview gallery photos directly on the post card.',
+    image: screenshotGallery,
   },
   {
-    title: 'Reporting',
+    title: 'Comments and replies',
     description:
-      'Easily export your data into an Excel spreadsheet where you can do whatever the hell you want with it.',
-    image: screenshotReporting,
+      'Easy and quick to write a comment in an article. Additionally, you can edit/delete comments directly there if you have sufficient permissions.',
+    image: screenshotComments,
+  },
+  {
+    title: 'Bookmark and favorite',
+    description:
+      'Users can bookmark and favorite posts, and then view them in the author page. You can also view this list of other users and vice versa.',
+    image: screenshotFavorites,
   },
 ]
 
@@ -62,7 +69,7 @@ export function PrimaryFeatures() {
   return (
     <section
       id="features"
-      aria-label="Features for running your books"
+      aria-label="Some outstanding features of the Ncmaz."
       className="relative overflow-hidden bg-blue-600 pb-28 pt-20 sm:py-32"
     >
       <Image
@@ -76,11 +83,11 @@ export function PrimaryFeatures() {
       <Container className="relative">
         <div className="max-w-2xl md:mx-auto md:text-center xl:max-w-none">
           <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl md:text-5xl">
-            Everything you need to run your books.
+            Some outstanding features of the Ncmaz.
           </h2>
           <p className="mt-6 text-lg tracking-tight text-blue-100">
-            Well everything you need if you aren’t that picky about minor
-            details like tax compliance.
+            In addition to the power of Next.js ISR and headless WordPress,
+            below are other outstanding features.
           </p>
         </div>
         <Tab.Group

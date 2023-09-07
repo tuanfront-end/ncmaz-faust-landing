@@ -85,7 +85,7 @@ export function Hero() {
                       className={
                         groupIndex == 0
                           ? company.name == 'React'
-                            ? 'w-14'
+                            ? 'w-12'
                             : 'w-40'
                           : 'w-48'
                       }
