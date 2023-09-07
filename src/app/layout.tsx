@@ -6,11 +6,11 @@ import { type Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: {
-    template: '%s - TaxPal',
-    default: 'TaxPal - Accounting made simple for small businesses',
+    template: '%s - Ncmaz - Next.js Headless CMS WordPress Blog Magazine',
+    default: 'Ncmaz - Next.js Headless CMS WordPress Blog Magazine',
   },
   description:
-    'Most bookkeeping software is accurate, but hard to use. We make the opposite trade-off, and hope you don’t get audited.',
+    'Ncmaz - Next.js Headless CMS WordPress Blog Magazine. Ncmaz is a Next.js Headless CMS WordPress Blog Magazine. It is a high-quality, modern, and complete starter theme to quickly build a next.js headless CMS WordPress blog or magazine. It is super fast, light-weight, and SEO friendly. It is built with Next.js, TypeScript, Tailwind CSS, and integrates WordPress as a headless CMS.',
 }
 
 const inter = Inter({

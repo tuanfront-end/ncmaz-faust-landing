@@ -12,6 +12,7 @@ import screenshotHomeVideo from '@/images/screenshots/home4-video.png'
 import screenshotGallery from '@/images/screenshots/home5-gallery.png'
 import screenshotComments from '@/images/screenshots/comments.png'
 import screenshotFavorites from '@/images/screenshots/author-favorites.png'
+import { DEMO_PAGE_LINK } from '@/constants'
 
 const features = [
   {
@@ -146,13 +147,19 @@ export function PrimaryFeatures() {
                       </p>
                     </div>
                     <div className="mt-10 w-[45rem] overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-blue-900/20 sm:w-auto lg:mt-0 lg:w-[67.8125rem]">
-                      <Image
-                        className="w-full"
-                        src={feature.image}
-                        alt=""
-                        priority
-                        sizes="(min-width: 1024px) 67.8125rem, (min-width: 640px) 100vw, 45rem"
-                      />
+                      <a
+                        href={DEMO_PAGE_LINK}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Image
+                          className="w-full"
+                          src={feature.image}
+                          alt=""
+                          priority
+                          sizes="(min-width: 1024px) 67.8125rem, (min-width: 640px) 100vw, 45rem"
+                        />
+                      </a>
                     </div>
                   </Tab.Panel>
                 ))}
