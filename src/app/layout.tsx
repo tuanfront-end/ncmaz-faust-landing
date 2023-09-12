@@ -40,7 +40,7 @@ export default function RootLayout({
         lexend.variable,
       )}
     >
-      <body className="flex h-full flex-col">
+      <body className="__adAnalytics flex h-full flex-col">
         {children}
         <Analytics />
       </body>
