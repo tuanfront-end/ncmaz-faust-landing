@@ -48,8 +48,7 @@ export function Hero() {
             <path d="m9.997 6.91-7.583 3.447A1 1 0 0 1 1 9.447V2.553a1 1 0 0 1 1.414-.91L9.997 5.09c.782.355.782 1.465 0 1.82Z" />
           </svg>
           <span className="ml-3">
-            <span className="hidden sm:inline">Live preview</span>
-            demo
+            <span className="hidden sm:inline">Live preview</span> demo
           </span>
         </Button>
       </div>
