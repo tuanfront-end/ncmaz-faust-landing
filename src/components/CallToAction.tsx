@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import backgroundImage from '@/images/background-call-to-action.jpg'
-import { BUY_LINK, PRICE } from '@/constants'
+import { BUY_LINK, DEMO_PAGE_LINK, PRICE } from '@/constants'
 
 export function CallToAction() {
   return (
@@ -28,14 +28,31 @@ export function CallToAction() {
             {`It’s time to improve your website. Buy the Ncmaz theme so you can feel
             like you’re doing something productive.`}
           </p>
-          <Button
-            href={BUY_LINK}
-            target="_blank"
-            color="white"
-            className="mt-10"
-          >
-            Buy now for {PRICE}
-          </Button>
+
+          <div className="mt-10 flex justify-center gap-x-6">
+            <Button color="white" target="_blank" href={BUY_LINK}>
+              <span>
+                Buy now
+                <span className="hidden sm:inline"> for {PRICE}</span>
+              </span>
+            </Button>
+            <Button
+              color="slate"
+              href={DEMO_PAGE_LINK}
+              variant="solid"
+              target="_blank"
+            >
+              <svg
+                aria-hidden="true"
+                className="h-3 w-3 flex-none fill-blue-50 group-active:fill-current"
+              >
+                <path d="m9.997 6.91-7.583 3.447A1 1 0 0 1 1 9.447V2.553a1 1 0 0 1 1.414-.91L9.997 5.09c.782.355.782 1.465 0 1.82Z" />
+              </svg>
+              <span className="ml-3">
+                <span className="hidden sm:inline">Live preview</span> demo
+              </span>
+            </Button>
+          </div>
         </div>
       </Container>
     </section>
