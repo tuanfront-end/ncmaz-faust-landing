@@ -16,7 +16,7 @@ import { DEMO_PAGE_LINK } from '@/constants'
 
 const features = [
   {
-    title: 'Live listiening podcast, audio',
+    title: 'Live listening podcast, audio',
     description:
       'Users can still listen to podcasts/audio/music while reading articles and experiencing the website!',
     image: screenshotHomeAudio,

@@ -94,6 +94,7 @@ function MobileNavigation() {
               target="_blank"
               href={BUY_LINK}
               color="blue"
+              variant="solid"
               className="w-full"
             >
               Buy now
@@ -126,7 +127,12 @@ export function Header() {
                 Buy now <span className="hidden lg:inline">for {PRICE}</span>
               </NavLink>
             </div>
-            <Button href={DEMO_PAGE_LINK} target="_blank" color="blue">
+            <Button
+              href={DEMO_PAGE_LINK}
+              target="_blank"
+              color="blue"
+              variant="solid"
+            >
               Live preview demo
             </Button>
             <div className="-mr-1 md:hidden">
