@@ -18,6 +18,7 @@ export default function Home() {
         <CallToAction />
         <ListFeatures />
         <Faqs />
+        <CallToAction />
       </main>
       <Footer />
     </>

@@ -41,9 +41,9 @@ export function Hero() {
           </span>
         </Button>
         <Button
+          variant="solid"
           color="blue"
           href={DEMO_PAGE_LINK}
-          variant="solid"
           target="_blank"
         >
           <svg

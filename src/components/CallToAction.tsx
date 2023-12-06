@@ -9,7 +9,7 @@ export function CallToAction() {
   return (
     <section
       id="get-started-today"
-      className="relative overflow-hidden bg-blue-600 py-32"
+      className="relative overflow-hidden bg-blue-600 py-28"
     >
       <Image
         className="absolute left-1/2 top-1/2 max-w-none -translate-x-1/2 -translate-y-1/2"
@@ -30,7 +30,12 @@ export function CallToAction() {
           </p>
 
           <div className="mt-10 flex justify-center gap-x-6">
-            <Button color="white" target="_blank" href={BUY_LINK}>
+            <Button
+              color="white"
+              variant="solid"
+              target="_blank"
+              href={BUY_LINK}
+            >
               <span>
                 Buy now
                 <span className="hidden sm:inline"> for {PRICE}</span>

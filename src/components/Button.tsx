@@ -44,13 +44,18 @@ type ButtonProps<
 export function Button<
   Color extends ColorKey<Variant>,
   Variant extends VariantKey = 'solid',
->({ variant, color, className, ...props }: ButtonProps<Variant, Color>) {
+>({
+  variant = 'solid' as Variant,
+  color = 'slate' as Color,
+  className,
+  ...props
+}: ButtonProps<Variant, Color>) {
   variant = variant ?? ('solid' as Variant)
   color = color ?? ('slate' as Color)
 
   className = clsx(
-    baseStyles[variant],
-    variantStyles[variant][color],
+    baseStyles[variant] as any,
+    variantStyles[variant][color] as any,
     className,
   )
 
