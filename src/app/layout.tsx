@@ -39,14 +39,15 @@ export const metadata: Metadata = {
     },
   ],
   description:
-    'Ncmaz - Next.js Headless CMS WordPress Blog Magazine. Ncmaz is a Next.js Headless CMS WordPress Blog Magazine. It is a high-quality, modern, and complete starter theme to quickly build a next.js headless CMS WordPress blog or magazine. It is super fast, light-weight, and SEO friendly. It is built with Next.js, TypeScript, Tailwind CSS, and integrates WordPress as a headless CMS.',
+    'It is a high-quality, modern, and complete starter theme to quickly build a next.js headless CMS WordPress blog or magazine. It is super fast, light-weight, and SEO friendly. It is built with Next.js, TypeScript, Tailwind CSS, and integrates WordPress as a headless CMS.',
   openGraph: {
     title: 'Ncmaz - Next.js Headless CMS WordPress Blog Magazine',
     description:
-      'Ncmaz - Next.js Headless CMS WordPress Blog Magazine. Ncmaz is a Next.js Headless CMS WordPress Blog Magazine. It is a high-quality, modern, and complete starter theme to quickly build a next.js headless CMS WordPress blog or magazine. It is super fast, light-weight, and SEO friendly. It is built with Next.js, TypeScript, Tailwind CSS, and integrates WordPress as a headless CMS.',
+      'It is a high-quality, modern, and complete starter theme to quickly build a next.js headless CMS WordPress blog or magazine. It is super fast, light-weight, and SEO friendly. It is built with Next.js, TypeScript, Tailwind CSS, and integrates WordPress as a headless CMS.',
     type: 'website',
     url: 'https://ncmaz-faust-landing.vercel.app/',
-    images: '/images/screenshots/home3-audio.png',
+    images:
+      'https://camo.envatousercontent.com/6287019c01f686ba1302a85b5f31e7d456a3eef2/68747470733a2f2f6e636d617a2d66617573742e636869736e67686961782e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032332f30392f696d6167653131332e706e67',
     siteName: 'Ncmaz - Next.js Headless CMS WordPress Blog Magazine',
   },
   manifest: '/manifest.json',
@@ -55,7 +56,8 @@ export const metadata: Metadata = {
     site: '@chisnghiax',
     title: 'Ncmaz - Next.js Headless CMS WordPress Blog Magazine',
     description: 'Ncmaz - Next.js Headless CMS WordPress Blog Magazine ',
-    images: '/images/screenshots/home3-audio.png',
+    images:
+      'https://camo.envatousercontent.com/6287019c01f686ba1302a85b5f31e7d456a3eef2/68747470733a2f2f6e636d617a2d66617573742e636869736e67686961782e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032332f30392f696d6167653131332e706e67',
   },
 }
 
