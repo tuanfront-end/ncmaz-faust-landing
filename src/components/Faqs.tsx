@@ -54,6 +54,35 @@ const faqs = [
               </p>
             </li>
           </ul>
+
+          <p>
+            You can use a subdomain for the front-end and the main domain for
+            the back-end. For example: <code>app.example.com</code> and{' '}
+            <code>example.com</code>.
+          </p>
+          <br />
+          <p>
+            🔥 If you feel it is complicated, you should consider{' '}
+            <a
+              href="https://vercel.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-500"
+            >
+              Vercel
+            </a>
+            . Now you only need WordPress and{' '}
+            <a
+              href="https://vercel.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-500"
+            >
+              Vercel
+            </a>
+            . Vercel will provide you with hosting and a free domain included.
+            You can deploy your Next.js website with Vercel in a few clicks.
+          </p>
         </div>
       ),
     },
