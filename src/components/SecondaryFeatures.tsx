@@ -236,13 +236,13 @@ export function SecondaryFeatures() {
 			<Container>
 				<div className="mx-auto max-w-3xl md:text-center">
 					<h2 className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl">
-						Manage posts, manage accounts, create/update/delete posts, etc.
+						Manage posts, manage account, create/update/delete posts, etc.
 					</h2>
 					<p className="mt-4 text-lg tracking-tight text-slate-700">
 						Because now authors will be able to manage all their necessary
 						information in the{' '}
-						<span className="font-medium italic">front end</span> . Manage
-						posts, manage accounts, create/update/delete posts, and more.
+						<span className="font-medium italic">front end</span>. Manage posts,
+						manage account, create/update/delete posts, and more.
 					</p>
 				</div>
 				<FeaturesMobile />
