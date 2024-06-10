@@ -24,7 +24,7 @@ const features: Array<Feature> = [
 		summary:
 			'No need to go to the WordPress admin, now you can manage all your posts in the frontend.',
 		description:
-			'Your articles will be displayed with all the necessary information. In addition, you can perform tasks such as add/edit/delete/change post status directly and quickly.',
+			'Your posts will be displayed with all the necessary information. In addition, you can perform tasks such as add/edit/delete/change post status directly and quickly.',
 		image: screenshotPosts,
 		icon: function ReportingIcon() {
 			let id = useId()
@@ -80,9 +80,9 @@ const features: Array<Feature> = [
 	{
 		name: 'Submission & Edit post',
 		summary:
-			'You can submit new articles or edit existing articles directly in the frontend.',
+			'You can submit new posts or edit existing posts directly in the frontend.',
 		description:
-			'You can now submit new articles or edit existing articles directly in the frontend. The interface is beautiful and flexible. You can add/edit/delete articles, upload images, and more.',
+			'You can now submit new posts or edit existing posts directly in the frontend. The interface is beautiful and flexible. You can add/edit/delete posts, upload images, and more.',
 		image: screenshotSubmisstion,
 
 		icon: function InventoryIcon() {
@@ -236,13 +236,13 @@ export function SecondaryFeatures() {
 			<Container>
 				<div className="mx-auto max-w-3xl md:text-center">
 					<h2 className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl">
-						Manage articles, manage accounts, post/edit/delete articles, and
-						more
+						Manage posts, manage accounts, create/update/delete posts, etc.
 					</h2>
 					<p className="mt-4 text-lg tracking-tight text-slate-700">
 						Because now authors will be able to manage all their necessary
-						information in the fron tend. Manage articles, manage accounts,
-						post/edit/delete articles, and more.
+						information in the{' '}
+						<span className="font-medium italic">front end</span> . Manage
+						posts, manage accounts, create/update/delete posts, and more.
 					</p>
 				</div>
 				<FeaturesMobile />
