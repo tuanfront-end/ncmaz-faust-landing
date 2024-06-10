@@ -18,19 +18,19 @@ const features = [
 	{
 		title: 'Live listening podcast, audio',
 		description:
-			'Users can still listen to podcasts/audio/music while reading articles and experiencing the website!',
+			'Users can still listen to podcast/audio/music while reading articles and experiencing the website!',
 		image: screenshotHomeAudio,
 	},
 	{
 		title: 'Video live preview on card',
 		description:
-			'Users no longer need to navigate to the post and just hover over the post card to preview the video.',
+			'Users no longer need to navigate to the post page and just hover over the post card to preview the video.',
 		image: screenshotHomeVideo,
 	},
 	{
 		title: 'Gallery slider on card',
 		description:
-			'Users no longer need to navigate to posts and can now preview gallery photos directly on the post card.',
+			'Users no longer need to navigate to post page and can now preview gallery photos directly on the post card.',
 		image: screenshotGallery,
 	},
 	{
@@ -84,12 +84,12 @@ export function PrimaryFeatures() {
 			<Container className="relative">
 				<div className="max-w-2xl md:mx-auto md:text-center xl:max-w-none">
 					<h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl md:text-5xl">
-						Some outstanding features of the Ncmaz.
+						Some outstanding features <br /> of the Ncmaz.
 					</h2>
 					<p className="mt-6 text-lg tracking-tight text-blue-100">
 						In addition to the power and lightning speed of Next.js ISR and
-						headless WordPress, below are other outstanding features that only
-						Ncmaz has.
+						headless WordPress, <br /> below are other outstanding features that
+						only Ncmaz has.
 					</p>
 				</div>
 				<Tab.Group
