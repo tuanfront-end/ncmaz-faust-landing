@@ -35,7 +35,7 @@ const featuresLists = [
       content:
         "The website is designed with a modern, beautiful and consistent UI. Meticulously designed and functional pages provide great user interaction.",
       author: {
-        name: "The look of 2023",
+        name: "The look of 2026",
         role: "The website is designed with a modern, beautiful and consistent UI",
         image: gutenbergImage1,
       },
